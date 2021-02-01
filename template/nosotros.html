@@ -1,25 +1,22 @@
 <section class="container-fluid">
       <h3>Nosotros</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
+      <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
         occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
         laboris nisi ut aliquip ex ea commodo consequat.
-      </p>
+      </p> -->
     <div class="row">
     <div
         class="col-sm-6 col-md-3"
         ng-repeat="contacto in contactos">
+        <a target="_blank" href="{{contacto.url}}">
       <img 
           src="{{contacto.img}}" 
           width="250"
           height="250">
+        </a>
       <h3>{{contacto.nombre}}</h3>
       <p>{{contacto.titulo}}</p>
       <p>{{contacto.descripcion}}</p>
-      <p>
-          <button class="btn btn-default">
-              <a href="{{contacto.link}}">Contacto</a>
-          </button>
-      </p>
     </div>
     </div>
     </section>

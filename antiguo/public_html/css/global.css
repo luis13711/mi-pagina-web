@@ -1,0 +1,68 @@
+.row{
+    float:left;
+    width: 100%;
+}
+
+.column-30{
+    float:left;
+    width:30%;
+}
+
+.column-33{
+    float:left;
+    width:33.33%;
+}
+
+.column-80{
+    float:left;
+    width:80%;
+}
+
+.column-20{
+    float:left;
+    width:20%;
+}
+
+.red{
+    background-color:red;
+}
+.black{
+    background-color:black;
+}
+.blue{
+    background-color:blue;
+}
+.green{
+    background-color:green;
+}
+.yellow{
+    background-color:yellow;
+}
+.orange{
+    background-color:orange;
+}
+
+.white{
+    background-color:white;
+}
+.orange{
+    background-color: orange;
+}
+.orangered{
+    background-color: orangered;
+}
+
+.aqua{
+    background-color: aqua;
+}
+
+.aquamarine{
+    background-color:aquamarine;
+}
+
+.text-black{
+    font-family: arial;
+    font-size: 12px;
+    text-decoration: none;
+    font-style: normal;
+}

@@ -26,30 +26,10 @@ var sesionjs = [
 ];
 var proyectosjs = [
   {
-      nombre:"Summer House",
-      imagen:"w3images/house5.jpg"
+      nombre:"Geocercas con los frameworks ionic y angular",
+      imagen:"proyectos/geocercaionic.png",
+      url:"https://www.instagram.com/p/CKrHNDmn-8s/"
   },
-  {
-      nombre:"Casa blanca2",
-      imagen:"w3images/house5.jpg"
-  },
-  {
-      nombre:"Summer House",
-      imagen:"w3images/house5.jpg"
-  },
-  {
-      nombre:"Casa blanca2",
-      imagen:"w3images/house5.jpg"
-  },
-  {
-      nombre:"Summer House",
-      imagen:"w3images/house5.jpg"
-  },
-  {
-      nombre:"Casa blanca2",
-      imagen:"w3images/house5.jpg"
-  }
-
 ];
 
 var contactosjs = [
@@ -58,31 +38,15 @@ var contactosjs = [
     alt:"Luis",
     nombre:"Luis Correa",
     titulo:"Ingeniero en Computación",
-    descripcion:"Desarrollador de software front-end",
-    link:"Contacto"
+    descripcion:"Desarrollador Semisenior .Net Full Stack",
+    url:"https://www.linkedin.com/in/luis-correa-36477a1b7/"
 },
 {
-    img:"w3images/Percy_Correa.jpg",
+    img:"w3images/Percy Correa.jpg",
     alt:"Percy",
     nombre:"Percy Correa",
-    titulo:"Ingeniero en Civil",
+    titulo:"Ingeniero Civil",
     descripcion:"Diseño de Planos",
-    link:"contacto_percy.html"
-},
-{
-    img:"w3images/Luis_Correa.jpg",
-    alt:"Luis",
-    nombre:"Luis Correa",
-    titulo:"Ingeniero en Computación",
-    descripcion:"Desarrollador de software front-end",
-    link:"Contacto"
-},
-{
-    img:"w3images/Luis_Correa.jpg",
-    alt:"Percy",
-    nombre:"Percy Correa",
-    titulo:"Ingeniero en Civil",
-    descripcion:"Diseño de Planos",
-    link:"contacto_percy.html"
+    url:"https://www.linkedin.com/in/percy-correa-a9a919ba/"
 }
 ];

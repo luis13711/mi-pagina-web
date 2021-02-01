@@ -3,8 +3,8 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-var app = angular.module("myApp", []);
-    app.controller("myCtrl", function($scope) {
+var myApp = angular.module("myApp", []);
+myApp.controller("myCtrl", function($scope) {
         $scope.sesion = sesionjs;
         $scope.menu = menujs;
         $scope.contactos = contactosjs;
@@ -13,7 +13,11 @@ var app = angular.module("myApp", []);
             descripcion:"Los siguientes proyectos fueron desarrollados"
         };
         $scope.proyectos = proyectosjs;
-    });
+});
+
+
+
+
 function iniciar()
 {
     

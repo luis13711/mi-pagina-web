@@ -1,0 +1,24 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 11/09/2017, 12:29:31 PM
+    Author     : alberto
+*/
+/*Mixins parametricos*/
+.round-borders(@box:10px) {
+  border-radius: @box;
+  -moz-border-radius: @box;
+  -webkit-border-radius: @box;
+  -ms-border-radius: @box;
+  -o-border-radius: @box;
+  color:@basecolor;
+  background-color: @negro;
+}
+.sombra (@ejeX: 10px, @ejeY: 10px, @desfX: 5px, @desfY: 0px, @alpha: 0.75){
+    -webkit-box-shadow: @ejeX @ejeY @desfX @desfY rgba(0, 0, 0, @alpha);
+    -moz-box-shadow: @ejeX @ejeY @desfX @desfY rgba(0, 0, 0, @alpha);
+    box-shadow: @ejeX @ejeY @desfX @desfY rgba(0, 0, 0, @alpha);
+}
