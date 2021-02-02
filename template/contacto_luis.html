@@ -1,19 +1,83 @@
-<!-- Modal -->
-<div id="myModal" class="modal fade" role="dialog">
-    <div class="modal-dialog">
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Modal Header</h4>
-        </div>
-        <div class="modal-body">
-          <p>Some text in the modal.</p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
+
+    <section class="container-fluid">
+       
+      <div class="row">
+          <div class="col-sm-6 col-md-3">
+            <a target="_blank" href="https://www.linkedin.com/in/luis-correa-36477a1b7/">
+            <img src="w3images/Luis_Correa.jpg" style="width:100%">
+            </a>
+            <h3>Luis Correa</h3>
+            <p>Ingeniero en Computación</p>
+            <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+          </div>
       </div>
-    </div>
-  </div>
+  </section>
   
+<!-- Page content -->
+<section class="container-fluid" style="max-width:1564px">    
+  <h1 align="center">INGENIERÍA CIVIL</h1>
+  <h2>
+  PROYECTOS
+  </h2>
+  <h3>
+      <ul>
+          <li>Levantamientos</li>
+          <li>Documentos</li>
+          <li>Diseño y Cálculos</li>
+          <li>Planos</li>
+      </ul>
+  </h3>
+  <h2>
+  ASESORÍA (A nivel nacional)
+  </h2>
+  <h3>
+      <ul>
+          <li>Levantamientos</li>
+          <li>Presupuestos</li>
+          <li>Precios Unitarios</li>
+          <li>Programas de Trabajo</li>
+          <li>Obras en Ejecución</li>
+      </ul>
+  </h3>
+</section>
+
+<!-- Page content -->
+<section class="container-fluid" style="max-width:1564px">
+  <h2 style="text-align: center;">Proyectos Realizados</h2>
+  <br>
+  <hr>
+  <div class="row">
+      <div class="col-sm-6 col-md-3">
+        <div>Summer House</div>
+        <img src="w3images/house5.jpg" style="width:100%">
+      </div>
+      <div class="col-sm-6 col-md-3">
+        <div>Brick House</div>
+        <img src="w3images/house2.jpg" style="width:100%">
+      </div>
+      <div class="col-sm-6 col-md-3">
+        <div class="w3-display-topleft w3-black w3-padding">Renovated</div>
+        <img src="w3images/house3.jpg" style="width:100%">
+      </div>
+      <div class="col-sm-6 col-md-3">
+        <div>Barn House</div>
+        <img src="w3images/house4.jpg" style="width:100%">
+      </div>
+  </div>
+  <br>
+  <hr>
+  <h2 style="text-align: center;">Servicio comunitario</h2>
+  <br>
+  <hr>
+  <div class="row">
+    <div 
+        ng-repeat="casa in proyectos"
+        class="col-sm-6 col-md-3">
+        <!--  <h4>{{ casa.nombre }}</h4> -->
+         <a target="_blank" class="dropdown-item" href="{{ casa.url }}">
+            <img  src="{{casa.imagen}}" style="width:100%">
+        </a>
+   </div>
+</div>
+</section>
+

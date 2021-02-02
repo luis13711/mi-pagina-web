@@ -52,11 +52,8 @@ app.controller('contactoLuisController', function(postService, $scope, $rootScop
 	$scope.sesion = sesionjs;
         $scope.menu = menujs;
         $scope.contactos = contactosjs;
-        $scope.descripcion_p = {
-            titulo:"Proyectos",
-            descripcion:"Los siguientes proyectos fueron desarrollados"
-        };
-        $scope.proyectos = proyectosjs;
+
+        $scope.proyectos = servicio_comunitario_luis;
 });
 
 app.controller('contactoPercyController', function(postService, $scope, $rootScope){
