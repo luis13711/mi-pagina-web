@@ -57,8 +57,8 @@ var contactosjs = [
     img:"w3images/Juan Correa.PNG",
     alt:"Juan",
     nombre:"Juan Correa",
-    titulo:"Conductor",
-    descripcion:"Conductor de automoviles",
+    titulo:"Asesor Comercial",
+    descripcion:"Vendedor automotriz",
     url:"https://www.linkedin.com/in/percy-correa-a9a919ba/"
 }
 ];
