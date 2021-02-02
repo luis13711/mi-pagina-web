@@ -42,7 +42,7 @@ var contactosjs = [
     titulo:"Ingeniero Civil",
     descripcion:"Diseño de Planos",
     url:"https://www.linkedin.com/in/percy-correa-a9a919ba/"
-}
+},
 {
     img:"w3images/Juan Correa.PNG",
     alt:"Juan",
