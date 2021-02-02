@@ -54,7 +54,7 @@ var contactosjs = [
 },
 {
     id:3,
-    img:"w3images/Juan Correa.PNG",
+    img:"w3images/Juan Correa.jpg",
     alt:"Juan",
     nombre:"Juan Correa",
     titulo:"Asesor Comercial",
