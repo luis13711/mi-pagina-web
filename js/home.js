@@ -3,16 +3,15 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-var myApp = angular.module("myApp", []);
-myApp.controller("myCtrl", function($scope) {
-        $scope.sesion = sesionjs;
-        $scope.menu = menujs;
-        $scope.contactos = contactosjs;
-        $scope.descripcion_p = {
-            titulo:"Proyectos",
-            descripcion:"Los siguientes proyectos fueron desarrollados"
-        };
-        $scope.proyectos = proyectosjs;
+var myApp = angular.module("myApp", ['ngRoute', 'ngResource']).run(function($rootScope) {
+	/* $rootScope.authenticated = false;
+	$rootScope.current_user = '';
+	
+	$rootScope.signout = function(){
+    	$http.get('auth/signout');
+    	$rootScope.authenticated = false;
+    	$rootScope.current_user = '';
+	}; */
 });
 
 myApp.config(function($routeProvider){
@@ -25,17 +24,14 @@ myApp.config(function($routeProvider){
 });
 
 myApp.controller('mainController', function(postService, $scope, $rootScope){
-	/* $scope.posts = postService.query();
-	$scope.newPost = {created_by: '', text: '', created_at: ''};
-	
-	$scope.post = function() {
-	  $scope.newPost.created_by = $rootScope.current_user;
-	  $scope.newPost.created_at = Date.now();
-	  postService.save($scope.newPost, function(){
-	    $scope.posts = postService.query();
-	    $scope.newPost = {created_by: '', text: '', created_at: ''};
-	  });
-	}; */
+	$scope.sesion = sesionjs;
+        $scope.menu = menujs;
+        $scope.contactos = contactosjs;
+        $scope.descripcion_p = {
+            titulo:"Proyectos",
+            descripcion:"Los siguientes proyectos fueron desarrollados"
+        };
+        $scope.proyectos = proyectosjs;
 });
 
 function iniciar()

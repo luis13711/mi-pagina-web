@@ -1,9 +1,3 @@
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 var menujs = [
     {
         nombre:"Inicio",
@@ -47,6 +41,14 @@ var contactosjs = [
     nombre:"Percy Correa",
     titulo:"Ingeniero Civil",
     descripcion:"Diseño de Planos",
+    url:"https://www.linkedin.com/in/percy-correa-a9a919ba/"
+}
+{
+    img:"w3images/Juan Correa.PNG",
+    alt:"Juan",
+    nombre:"Juan Correa",
+    titulo:"Conductor",
+    descripcion:"Conductor de automoviles",
     url:"https://www.linkedin.com/in/percy-correa-a9a919ba/"
 }
 ];
