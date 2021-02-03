@@ -1,12 +1,16 @@
 var app = angular.module('chirpApp', ['ngRoute', 'ngResource']).run(function($rootScope) {
-	/* $rootScope.authenticated = false;
-	$rootScope.current_user = '';
 	
-	$rootScope.signout = function(){
-    	$http.get('auth/signout');
-    	$rootScope.authenticated = false;
-    	$rootScope.current_user = '';
-	}; */
+});
+
+app.controller('myCtrl', function(postService, $scope, $rootScope){
+	$scope.sesion = sesionjs;
+        $scope.menu = menujs;
+        $scope.contactos = contactosjs;
+        $scope.descripcion_p = {
+            titulo:"Proyectos",
+            descripcion:"Los siguientes proyectos fueron desarrollados"
+        };
+        $scope.proyectos = proyectosjs;
 });
 
 app.config(function($routeProvider){

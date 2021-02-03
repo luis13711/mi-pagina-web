@@ -19,11 +19,17 @@ var sesionjs = [
     }
 ];
 var proyectosjs = [
-  {
+    {
+        nombre:"Geocercas con el lenguaje kotlin y google maps",
+        imagen:"proyectos/kotlinmaps.png",
+        url:"https://www.instagram.com/p/CK1OWPGnd3m/"
+    },
+    {
       nombre:"Geocercas con los frameworks ionic y angular",
       imagen:"proyectos/geocercaionic.png",
       url:"https://www.instagram.com/p/CKrHNDmn-8s/"
   },
+  
 ];
 var servicio_comunitario_luis = [
     {
