@@ -34,11 +34,27 @@ app.config(function($routeProvider){
 		.when('/contacto_juan', {
 			templateUrl: 'template/contacto_juan.html',
 			controller: 'contactoJuanController'
-		});
+		})
+        //the contacto empresa
+	.when('/contacto_empresa', {
+			templateUrl: 'template/contacto_empresa.html',
+			controller: 'contactoEmpresaController'
+		})
 });
 
 app.factory('postService', function($resource){
 	return $resource('/api/posts/:id');
+});
+
+app.controller('contactoEmpresaController', function(postService, $scope, $rootScope){
+	$scope.sesion = sesionjs;
+        $scope.menu = menujs;
+        $scope.contactos = contactosjs;
+        $scope.descripcion_p = {
+            titulo:"Proyectos",
+            descripcion:"Los siguientes proyectos fueron desarrollados"
+        };
+        $scope.proyectos = proyectosjs;
 });
 
 app.controller('mainController', function(postService, $scope, $rootScope){
