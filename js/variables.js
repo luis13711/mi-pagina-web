@@ -31,7 +31,7 @@ var proyectosjs = [
   },
   {
     nombre:"Geocercas con los frameworks nativescript, vuejs y google maps api",
-    imagen:"proyectos/geocercaionic.png",
+    imagen:"proyectos/tns-geocerca.png",
     url:"https://www.instagram.com/p/CK9FdpJH96N/"
 },
 ];
