@@ -40,83 +40,154 @@
 
 <!-- Page content -->
 <section class="container-fluid" style="max-width:1564px">
-  <h2 style="text-align: center;">Trabajo de grado</h2>
+  <div class="card" style="width: 100%;">
+    <div class="card-body">
+      <button 
+        class="btn btn-secondary btn-lg mx-auto" 
+        type="button" 
+        data-toggle="collapse" 
+        data-target="#collapTapGrado" 
+        aria-expanded="false" 
+        aria-controls="collapTapGrado">
+        Trabajo de grado
+      </button>
+      <br>
+      <br>
+      <div class="collapse" id="collapTapGrado">
+        <div class="row">
+          <div class="col-sm-6 col-md-3">
+            <a target="_blank" href="https://www.facebook.com/PdvsaROriente/">
+              <img src="proyectos/pdvsa.svg" style="width:100%">
+            </a>
+            <div class="w3-display-topleft w3-black w3-padding">Migración del servicio de impresión a tecnología tecnología de información libre</div>
+            
+          </div>
+        </div>
+      </div>
+      <br>
+      <hr>
+      <button 
+        class="btn btn-secondary btn-lg mx-auto" 
+        type="button" 
+        data-toggle="collapse" 
+        data-target="#collapTapExperiencia" 
+        aria-expanded="false" 
+        aria-controls="collapTapExperiencia">
+        Experiencia
+      </button>
+      <br>
+      <br>
+      <div class="collapse" id="collapTapExperiencia">
+        <div class="row">
+          <div class="col-sm-6 col-md-3">
+            <a target="_blank" href="https://www.facebook.com/PdvsaROriente/">
+              <img src="proyectos/pdvsa.svg" style="width:100%">
+            </a>
+            <div class="w3-display-topleft w3-black w3-padding">Proyecto de grado en PDVSA Refinación Oriente</div>
+            
+          </div>
+          <div class="col-sm-6 col-md-3">
+            
+            <a target="_blank" href="https://www.facebook.com/Ricana-Tours-107912725995677/">
+              <img src="proyectos/ricana-tours.svg" style="width:100%">
+            </a>
+            <div>Proyectos para la empresa ricana tours</div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <hr>
+      <button 
+        class="btn btn-secondary btn-lg mx-auto" 
+        type="button" 
+        data-toggle="collapse" 
+        data-target="#collapTapProyectos" 
+        aria-expanded="false" 
+        aria-controls="collapTapProyectos">
+        Proyectos realizados
+      </button>
+      <br>
+      <br>
+      <div class="collapse" id="collapTapProyectos">
+        <div class="row">
+          <div class="col-sm-6 col-md-3">
+            <a target="_blank" href="https://www.facebook.com/PdvsaROriente/">
+              <img src="proyectos/pdvsa.svg" style="width:100%">
+            </a>
+            <div class="w3-display-topleft w3-black w3-padding">Migración del servicio de impresión a tecnología tecnología de información libre</div>
+            
+          </div>
+          <div class="col-sm-6 col-md-3">
+            
+            <a target="_blank" href="https://www.facebook.com/Ricana-Tours-107912725995677/">
+              <img src="proyectos/ricana-tours.svg" style="width:100%">
+            </a>
+            <div>Aplicación web con codeigniter en ricana tours</div>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            
+            <a target="_blank" href="https://www.facebook.com/Ricana-Tours-107912725995677/">
+              <img src="proyectos/ricana-tours.svg" style="width:100%">
+            </a>
+            <div>Aplicación web con cakePHP en ricana tours</div>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            
+            <img src="w3images/house4.jpg" style="width:100%">
+            <div>Barn House</div>
+          </div>
+        </div>        
+      </div>
+      <br>
+      <hr>
+      <button 
+        class="btn btn-secondary btn-lg mx-auto" 
+        type="button" 
+        data-toggle="collapse" 
+        data-target="#collapTapSoporteTecnico" 
+        aria-expanded="false" 
+        aria-controls="collapTapSoporteTecnico">
+        Soporte tecnico
+      </button>
+      <br>
+      <br>
+      <div class="collapse" id="collapTapSoporteTecnico">
+        <div class="row">
+          <div class="col-sm-6 col-md-3">
+            
+            <img src="w3images/house5.jpg" style="width:100%">
+            <div>Summer House</div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <hr>
+      <button 
+        class="btn btn-secondary btn-lg mx-auto" 
+        type="button" 
+        data-toggle="collapse" 
+        data-target="#collapTapServicioComunitario" 
+        aria-expanded="false" 
+        aria-controls="collapTapServicioComunitario">
+        Servicio comunitario
+      </button>
+      <br>
+      <br>
+      <div class="collapse" id="collapTapServicioComunitario">
+        <div class="row">
+          <div 
+              ng-repeat="casa in proyectos"
+              class="col-sm-6 col-md-3">
+              <!--  <h4>{{ casa.nombre }}</h4> -->
+               <a target="_blank" class="dropdown-item" href="{{ casa.url }}">
+                  <img  src="{{casa.imagen}}" style="width:100%">
+              </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>  
   <br>
-  <hr>
-  <div class="row">
-      <div class="col-sm-6 col-md-3">
-        <div>Summer House</div>
-        <img src="w3images/house5.jpg" style="width:100%">
-      </div>
-      <div class="col-sm-6 col-md-3">
-        <div>Brick House</div>
-        <img src="w3images/house2.jpg" style="width:100%">
-      </div>
-      <div class="col-sm-6 col-md-3">
-        <div class="w3-display-topleft w3-black w3-padding">Renovated</div>
-        <img src="w3images/house3.jpg" style="width:100%">
-      </div>
-      <div class="col-sm-6 col-md-3">
-        <div>Barn House</div>
-        <img src="w3images/house4.jpg" style="width:100%">
-      </div>
-  </div>
-  <h2 style="text-align: center;">Experiencia</h2>
-  <br>
-  <hr>
-  <div class="row">
-      <div class="col-sm-6 col-md-3">
-        <div>Summer House</div>
-        <img src="w3images/house5.jpg" style="width:100%">
-      </div>
-      <div class="col-sm-6 col-md-3">
-        <div>Brick House</div>
-        <img src="w3images/house2.jpg" style="width:100%">
-      </div>
-      <div class="col-sm-6 col-md-3">
-        <div class="w3-display-topleft w3-black w3-padding">Renovated</div>
-        <img src="w3images/house3.jpg" style="width:100%">
-      </div>
-      <div class="col-sm-6 col-md-3">
-        <div>Barn House</div>
-        <img src="w3images/house4.jpg" style="width:100%">
-      </div>
-  </div>
-  <h2 style="text-align: center;">Proyectos Realizados</h2>
-  <br>
-  <hr>
-  <div class="row">
-      <div class="col-sm-6 col-md-3">
-        <div>Summer House</div>
-        <img src="w3images/house5.jpg" style="width:100%">
-      </div>
-      <div class="col-sm-6 col-md-3">
-        <div>Brick House</div>
-        <img src="w3images/house2.jpg" style="width:100%">
-      </div>
-      <div class="col-sm-6 col-md-3">
-        <div class="w3-display-topleft w3-black w3-padding">Renovated</div>
-        <img src="w3images/house3.jpg" style="width:100%">
-      </div>
-      <div class="col-sm-6 col-md-3">
-        <div>Barn House</div>
-        <img src="w3images/house4.jpg" style="width:100%">
-      </div>
-  </div>
-  <br>
-  <hr>
-  <h2 style="text-align: center;">Servicio comunitario</h2>
-  <br>
-  <hr>
-  <div class="row">
-    <div 
-        ng-repeat="casa in proyectos"
-        class="col-sm-6 col-md-3">
-        <!--  <h4>{{ casa.nombre }}</h4> -->
-         <a target="_blank" class="dropdown-item" href="{{ casa.url }}">
-            <img  src="{{casa.imagen}}" style="width:100%">
-        </a>
-   </div>
-</div>
+  <hr> 
 </section>
 
