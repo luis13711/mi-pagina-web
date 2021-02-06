@@ -29,7 +29,11 @@ var proyectosjs = [
       imagen:"proyectos/geocercaionic.png",
       url:"https://www.instagram.com/p/CKrHNDmn-8s/"
   },
-  
+  {
+    nombre:"Geocercas con los frameworks nativescript, vuejs y google maps api",
+    imagen:"proyectos/geocercaionic.png",
+    url:"https://www.instagram.com/p/CK9FdpJH96N/"
+},
 ];
 var servicio_comunitario_luis = [
     {
