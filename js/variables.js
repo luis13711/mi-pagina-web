@@ -1,3 +1,6 @@
+
+
+
 var menujs = [
     {
         nombre:"Inicio",
@@ -46,6 +49,7 @@ var servicio_comunitario_luis = [
 var contactosjs = [
 {
     id:1,
+    href:"#/contacto_luis",
     img:"w3images/Luis_Correa.jpg",
     alt:"Luis",
     nombre:"Luis Correa",
@@ -55,6 +59,7 @@ var contactosjs = [
 },
 {
     id:2,
+    href:"#/contacto_percy",
     img:"w3images/Percy Correa.jpg",
     alt:"Percy",
     nombre:"Percy Correa",
@@ -64,6 +69,7 @@ var contactosjs = [
 },
 {
     id:3,
+    href:"#/contacto_juan",
     img:"w3images/Juan Correa.jpg",
     alt:"Juan",
     nombre:"Juan Correa",

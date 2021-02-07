@@ -32,10 +32,10 @@
             aria-expanded="false">
             Contactos
           </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDpdContactos">
+          <div id="headerContactosId" class="dropdown-menu" aria-labelledby="navbarDpdContactos">
             <a  class="dropdown-item" href="#/contacto_luis">Luis Correa</a>
             <a  class="dropdown-item" href="#/contacto_percy">Percy Correa</a>
-            <a  class="dropdown-item" href="#/contacto_juan">Juan Correa</a>
+            <a  class="dropdown-item" href="#/contacto_juan">Juan Correa</a> 
           </div>
         </li>
         <li class="nav-item">
@@ -49,3 +49,21 @@
     </div>
   </nav>
 </header>
+<script>
+ /*  function cargarHeader(){
+        var header = document.getElementById('headerContactosId');
+        header.innerHTML='';
+        var cadena = '';
+        for(let contacto of contactosjs){
+                cadena+='<a  class="dropdown-item" href="'+contacto.href+'">'+contacto.nombre+'</a>';
+        }
+        console.log('cadena')
+        console.log(cadena)
+        header.innerHTML=cadena;
+}
+
+function iniciar(){
+        cargarHeader();
+}
+window.onload=iniciar; */
+</script>
