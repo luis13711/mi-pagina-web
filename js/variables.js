@@ -46,9 +46,11 @@ var servicio_comunitario_luis = [
     },
 ];
 
+
+
 var contactosjs = [
 {
-    id:1,
+    id:"1",
     href:"#/contacto_luis",
     img:"w3images/Luis_Correa.jpg",
     alt:"Luis",
@@ -58,7 +60,7 @@ var contactosjs = [
     url:"https://www.linkedin.com/in/luis-correa-36477a1b7/"
 },
 {
-    id:2,
+    id:"2",
     href:"#/contacto_percy",
     img:"w3images/Percy Correa.jpg",
     alt:"Percy",
@@ -68,7 +70,7 @@ var contactosjs = [
     url:"https://www.linkedin.com/in/percy-correa-a9a919ba/"
 },
 {
-    id:3,
+    id:"3",
     href:"#/contacto_juan",
     img:"w3images/Juan Correa.jpg",
     alt:"Juan",
@@ -77,4 +79,131 @@ var contactosjs = [
     descripcion:"Vendedor automotriz",
     url:"https://www.linkedin.com/in/percy-correa-a9a919ba/"
 }
+];
+
+var trabajo_grado_luis = [
+    {
+        id:1,
+        href:"https://www.facebook.com/PdvsaROriente/",
+        src:"proyectos/pdvsa.svg",
+        nombre:"Migración del servicio de impresión a tecnología tecnología de información libre",
+        tecnologia:[
+            {
+                id:1,
+                nombre:"bash",
+                porcentaje:40,
+            },
+            {
+                id:2,
+                nombre:"samba",
+                porcentaje:20,
+            },
+            {
+                id:3,
+                nombre:"cups",
+                porcentaje:20,
+            },
+            {
+                id:4,
+                nombre:"Debian",
+                porcentaje:20,
+            },
+        ],
+    },
+];
+
+var proyectos_realizados_luis = [
+    {
+        id:1,
+        href:"https://www.facebook.com/PdvsaROriente/",
+        src:"proyectos/pdvsa.svg",
+        nombre:"Migración del servicio de impresión a tecnología tecnología de información libre",
+        tecnologia:[
+            {
+                id:1,
+                nombre:"bash",
+                porcentaje:40,
+            },
+            {
+                id:2,
+                nombre:"samba",
+                porcentaje:20,
+            },
+            {
+                id:3,
+                nombre:"cups",
+                porcentaje:20,
+            },
+            {
+                id:4,
+                nombre:"Debian",
+                porcentaje:20,
+            },
+        ],
+    },
+    {
+        id:2,
+        href:"https://www.facebook.com/Ricana-Tours-107912725995677/",
+        src:"proyectos/ricana-tours.svg" ,
+        nombre:"Aplicación web con codeigniter en ricana tours",
+        tecnologia:[
+            {
+                id:1,
+                nombre:"bash",
+                porcentaje:10,
+            },
+            {
+                id:2,
+                nombre:"php",
+                porcentaje:10,
+            },
+            {
+                id:3,
+                nombre:"javascript",
+                porcentaje:10,
+            },
+            {
+                id:4,
+                nombre:"css",
+                porcentaje:10,
+            },
+            {
+                id:5,
+                nombre:"bootstrap",
+                porcentaje:10,
+            },
+            {
+                id:6,
+                nombre:"jquery",
+                porcentaje:10,
+            },
+            {
+                id:7,
+                nombre:"codeigniter",
+                porcentaje:10,
+            },
+            {
+                id:8,
+                nombre:"git",
+                porcentaje:20,
+            },
+            {
+                id:9,
+                nombre:"UML",
+                porcentaje:10,
+            },
+        ],
+    },
+    {
+        id:3,
+        href:"https://www.facebook.com/Ricana-Tours-107912725995677/",
+        src:"proyectos/ricana-tours.svg", 
+        nombre:"Aplicación web con cakePHP en ricana tours",
+        tecnologia:[
+            {
+                nombre:"bash",
+                porcentaje:60,
+            },
+        ],
+    }
 ];

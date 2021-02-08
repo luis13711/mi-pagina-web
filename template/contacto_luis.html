@@ -53,13 +53,24 @@
       </button>
       <br>
       <br>
-      <div class="collapse" id="collapTapGrado">
+      <div class="collapse show" id="collapTapGrado">
         <div class="row">
-          <div class="col-sm-6 col-md-3">
-            <a target="_blank" href="https://www.facebook.com/PdvsaROriente/">
-              <img src="proyectos/pdvsa.svg" style="width:100%">
+          <div 
+            ng-repeat="casa in trabajo_grado_luis"
+            class="col-sm-6 col-md-3">
+            <!--  <h4>{{ casa.nombre }}</h4> -->
+             <a target="_blank" class="dropdown-item" href="{{ casa.href }}">
+                <img  src="{{casa.src}}" style="width:100%" title="{{ casa.nombre }}">
+                <p style="overflow: hidden;">{{ casa.nombre }}</p>
             </a>
-            <div class="w3-display-topleft w3-black w3-padding">Migración del servicio de impresión a tecnología tecnología de información libre</div>
+            <button 
+              ng-click="obtenerDetalleTrabajoGrado(casa.id)"
+              type="button" 
+              class="btn btn-info" 
+              data-toggle="modal" 
+              data-target="#exampleModal">
+              Detalle
+            </button>
             
           </div>
         </div>
@@ -110,33 +121,25 @@
       <br>
       <div class="collapse" id="collapTapProyectos">
         <div class="row">
-          <div class="col-sm-6 col-md-3">
-            <a target="_blank" href="https://www.facebook.com/PdvsaROriente/">
-              <img src="proyectos/pdvsa.svg" style="width:100%">
+          <div 
+            ng-repeat="casa in proyectos_realizados_luis"
+            class="col-sm-6 col-md-3">
+            <!--  <h4>{{ casa.nombre }}</h4> -->
+             <a target="_blank" class="dropdown-item" href="{{ casa.href }}">
+                <img  src="{{casa.src}}" style="width:100%" title="{{ casa.nombre }}">
+                <p style="overflow: hidden;">{{ casa.nombre }}</p>
             </a>
-            <div class="w3-display-topleft w3-black w3-padding">Migración del servicio de impresión a tecnología tecnología de información libre</div>
+            <button 
+              ng-click="obtenerDetalle(casa.id)"
+              type="button" 
+              class="btn btn-info" 
+              data-toggle="modal" 
+              data-target="#exampleModal">
+              Detalle
+            </button>
             
           </div>
-          <div class="col-sm-6 col-md-3">
-            
-            <a target="_blank" href="https://www.facebook.com/Ricana-Tours-107912725995677/">
-              <img src="proyectos/ricana-tours.svg" style="width:100%">
-            </a>
-            <div>Aplicación web con codeigniter en ricana tours</div>
-          </div>
-          <div class="col-sm-6 col-md-3">
-            
-            <a target="_blank" href="https://www.facebook.com/Ricana-Tours-107912725995677/">
-              <img src="proyectos/ricana-tours.svg" style="width:100%">
-            </a>
-            <div>Aplicación web con cakePHP en ricana tours</div>
-          </div>
-          <div class="col-sm-6 col-md-3">
-            
-            <img src="w3images/house4.jpg" style="width:100%">
-            <div>Barn House</div>
-          </div>
-        </div>        
+               
       </div>
       <br>
       <hr>
@@ -189,5 +192,56 @@
   </div>  
   <br>
   <hr> 
+  <!-- Modal -->
+  <div 
+  class="modal fade" 
+  id="exampleModal" 
+  tabindex="-1" 
+  role="dialog" 
+  aria-labelledby="exampleModalLabel" 
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Tecnologías empleadas</h5>
+        <button 
+          type="button" 
+          class="close" 
+          data-dismiss="modal" 
+          aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div 
+          ng-repeat="tecnologia in tecnologia">
+          <div class="row">
+            <div 
+              class="col-sm-3 col-md-3">
+              {{tecnologia.nombre}}
+            </div>
+            <div 
+              class="col-sm-3 col-md-3">
+              <progress id="file" max="100" value="{{ tecnologia.porcentaje }}" title="{{tecnologia.nombre}} - {{tecnologia.porcentaje}}%">{{tecnologia.porcentaje}}%</progress>
+            </div>
+            <div 
+              class="col-sm-3 col-md-3">
+              {{tecnologia.porcentaje}}%
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button 
+          type="button" 
+          class="btn btn-secondary" 
+          data-dismiss="modal">
+          Close
+        </button>
+      </div>
+    </div>
+  </div>
+  
+  </div>   
 </section>
 

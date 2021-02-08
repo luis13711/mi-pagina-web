@@ -2,7 +2,7 @@
 
 
 var app = angular.module('chirpApp', ['ngRoute', 'ngResource']).run(function($rootScope) {
-	
+        $rootScope.contactos = contactosjs;
 });
 
 app.controller('myCtrl', function(postService, $scope, $rootScope){
@@ -61,7 +61,7 @@ app.controller('contactoEmpresaController', function(postService, $scope, $rootS
 });
 
 app.controller('mainController', function(postService, $scope, $rootScope){
-	$scope.sesion = sesionjs;
+	//$scope.sesion = sesionjs;
         $scope.menu = menujs;
         $scope.contactos = contactosjs;
         $scope.descripcion_p = {
@@ -69,14 +69,39 @@ app.controller('mainController', function(postService, $scope, $rootScope){
             descripcion:"Los siguientes proyectos fueron desarrollados"
         };
         $scope.proyectos = proyectosjs;
+        $scope.proyectos_realizados_luis = proyectos_realizados_luis;
 });
 
 app.controller('contactoLuisController', function(postService, $scope, $rootScope){
 	$scope.sesion = sesionjs;
         $scope.menu = menujs;
         $scope.contactos = contactosjs;
-
+        $scope.tecnologia = []
         $scope.proyectos = servicio_comunitario_luis;
+        $scope.proyectos_realizados_luis = proyectos_realizados_luis;
+        $scope.trabajo_grado_luis = trabajo_grado_luis;
+        $scope.obtenerDetalleTrabajoGrado = function(id){
+                console.log('obtenerDetalleTrabajoGrado')
+                var proyecto = {};
+                for(let proyecto2 of $scope.trabajo_grado_luis){
+                        if(proyecto2.id == id){
+                                proyecto = proyecto2;
+                        }
+                }
+                $scope.tecnologia = proyecto.tecnologia
+                
+        };
+        $scope.obtenerDetalle = function(id){
+                console.log('obtenerDetalle')
+                var proyecto = {};
+                for(let proyecto2 of $scope.proyectos_realizados_luis){
+                        if(proyecto2.id == id){
+                                proyecto = proyecto2;
+                        }
+                }
+                $scope.tecnologia = proyecto.tecnologia
+                
+        };
 });
 
 app.controller('contactoPercyController', function(postService, $scope, $rootScope){
