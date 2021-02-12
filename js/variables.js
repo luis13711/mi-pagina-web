@@ -46,7 +46,26 @@ var servicio_comunitario_luis = [
     },
 ];
 
-
+var ventas_madrejs = [
+    {
+        id:1,
+        href:"https://www.instagram.com/p/CD5PPbAjfDq/",
+        src:"images/michi/michi.PNG",
+        alt:"First slide",
+    },
+    {
+        id:2,
+        href:"https://www.instagram.com/p/CD5OZ1sjs2-/",
+        src:"images/michi/michi2.PNG",
+        alt:"Second slide"
+    },
+    {
+        id:3,
+        href:"https://www.instagram.com/p/CDfLDYPDqXq/",
+        src:"images/michi/michi3.PNG",
+        alt:"Third slide",
+    },
+]
 
 var contactosjs = [
 {

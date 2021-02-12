@@ -74,6 +74,7 @@ app.controller('contactoYolandaController', function(postService, $scope, $rootS
         $scope.proyectos = servicio_comunitario_luis;
         $scope.proyectos_realizados_luis = proyectos_realizados_luis;
         $scope.trabajo_grado_luis = trabajo_grado_luis;
+        $scope.ventas_madre = ventas_madrejs;
         $scope.obtenerDetalleTrabajoGrado = function(id){
                 console.log('obtenerDetalleTrabajoGrado')
                 var proyecto = {};
