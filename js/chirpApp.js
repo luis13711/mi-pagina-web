@@ -56,6 +56,9 @@ app.config(function($routeProvider){
         }).when('/emprender', {
                 templateUrl: 'template/emprender_internet.html',
                 controller: 'emprenderInternetController'
+        }).when('/contacto_yolanda', {
+                templateUrl: 'template/contacto_yolanda.html',
+                controller: 'contactoYolandaController'
         })
 });
 
@@ -63,6 +66,37 @@ app.factory('postService', function($resource){
 	return $resource('/api/posts/:id');
 });
 
+app.controller('contactoYolandaController', function(postService, $scope, $rootScope){
+	$scope.sesion = sesionjs;
+        $scope.menu = menujs;
+        $scope.contactos = contactosjs;
+        $scope.tecnologia = []
+        $scope.proyectos = servicio_comunitario_luis;
+        $scope.proyectos_realizados_luis = proyectos_realizados_luis;
+        $scope.trabajo_grado_luis = trabajo_grado_luis;
+        $scope.obtenerDetalleTrabajoGrado = function(id){
+                console.log('obtenerDetalleTrabajoGrado')
+                var proyecto = {};
+                for(let proyecto2 of $scope.trabajo_grado_luis){
+                        if(proyecto2.id == id){
+                                proyecto = proyecto2;
+                        }
+                }
+                $scope.tecnologia = proyecto.tecnologia
+                
+        };
+        $scope.obtenerDetalle = function(id){
+                console.log('obtenerDetalle')
+                var proyecto = {};
+                for(let proyecto2 of $scope.proyectos_realizados_luis){
+                        if(proyecto2.id == id){
+                                proyecto = proyecto2;
+                        }
+                }
+                $scope.tecnologia = proyecto.tecnologia
+                
+        };
+});
 
 app.controller('emprenderInternetController', function(postService, $scope, $rootScope){
 	$scope.sesion = sesionjs;
@@ -127,6 +161,7 @@ app.controller('agenciaEmpresasController', function(postService, $scope, $rootS
                 
         };
 });
+
 
 app.controller('agenciaProfesionalesController', function(postService, $scope, $rootScope){
 	$scope.sesion = sesionjs;

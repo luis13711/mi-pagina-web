@@ -50,7 +50,7 @@ var servicio_comunitario_luis = [
 
 var contactosjs = [
 {
-    id:"1",
+    id:1,
     href:"#/contacto_luis",
     img:"w3images/Luis_Correa.jpg",
     alt:"Luis",
@@ -60,7 +60,7 @@ var contactosjs = [
     url:"https://www.linkedin.com/in/luis-correa-36477a1b7/"
 },
 {
-    id:"2",
+    id:2,
     href:"#/contacto_percy",
     img:"w3images/Percy Correa.jpg",
     alt:"Percy",
@@ -70,7 +70,7 @@ var contactosjs = [
     url:"https://www.linkedin.com/in/percy-correa-a9a919ba/"
 },
 {
-    id:"3",
+    id:3,
     href:"#/contacto_juan",
     img:"w3images/Juan Correa.jpg",
     alt:"Juan",
@@ -78,6 +78,16 @@ var contactosjs = [
     titulo:"Asesor Comercial",
     descripcion:"Vendedor automotriz",
     url:"https://www.linkedin.com/in/percy-correa-a9a919ba/"
+},
+{
+    id:4,
+    href:"#/contacto_yolanda",
+    img:"w3images/Yolanda_Yancel.jpg",
+    alt:"Yolanda",
+    nombre:"Yolanda Yancel",
+    titulo:"Contador Publico",
+    descripcion:"Contador publico, asistente administrativa",
+    url:"https://www.linkedin.com/in/yolanda-yancel-flores-b39817111/"
 }
 ];
 

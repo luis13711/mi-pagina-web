@@ -1,16 +1,17 @@
 
     <section class="container-fluid">
        
-      <div class="row">
-          <div class="col-sm-6 col-md-3">
-            <a target="_blank" href="https://www.linkedin.com/in/luis-correa-36477a1b7/">
-            <img src="w3images/Luis_Correa.jpg" style="width:100%">
-            </a>
-            <h3>Luis Correa</h3>
-            <p>Ingeniero en Computación</p>
-            <p>Soy un ingeniero en computación. Mis objetivos son responsabilidad, creatividad, voluntad de saber, proactividad y trabajo en equipo..</p>
-          </div>
-      </div>
+      <div class="row" ng-repeat="contacto in contactos">
+        <!-- <a target="_blank" href="{{contacto.url}}"></a> --> 
+            <div class="col-sm-6 col-md-3" ng-if="contacto.id==1">
+              <a target="_blank" href="{{contacto.url}}">
+              <img src="{{contacto.img}}" style="width:100%">
+              </a>
+              <h3>{{contacto.nombre}}</h3>
+              <p>{{contacto.titulo}}</p>
+              <p>{{contacto.descripcion}}</p>
+            </div>
+        </div>
   </section>
   
 <!-- Page content -->

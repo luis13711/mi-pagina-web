@@ -1,17 +1,15 @@
 
     <section class="container-fluid">
        
-        <div class="row">
-            <div class="col-sm-6 col-md-3">
-              <img src="w3images/Percy Correa.jpg" style="width:100%">
-              <h3>Percy Correa</h3>
-              <p>Ingeniero Civil</p>
-              <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-              <p>
-                  <button class="btn btn-default">
-                      <a href="#/contacto_percy">Contacto</a>
-                  </button>
-              </p>
+      <div class="row" ng-repeat="contacto in contactos">
+        <!-- <a target="_blank" href="{{contacto.url}}"></a> --> 
+            <div class="col-sm-6 col-md-3" ng-if="contacto.id==2">
+              <a target="_blank" href="{{contacto.url}}">
+              <img src="{{contacto.img}}" style="width:100%">
+              </a>
+              <h3>{{contacto.nombre}}</h3>
+              <p>{{contacto.titulo}}</p>
+              <p>{{contacto.descripcion}}</p>
             </div>
         </div>
     </section>
