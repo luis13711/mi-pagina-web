@@ -1,5 +1,25 @@
 
 
+var cursosjs = [
+    {
+        target:"_self",
+        class:"dropdown-item",
+        href:"#/emprender",
+        nombre:"Emprender por internet"
+    },
+    { 
+              target:"_blank", 
+              class:"dropdown-item", 
+              href:"https://www.instagram.com/p/CK1OWPGnd3m/",
+              nombre:"Geocercas con el lenguaje kotlin y google maps"
+            },
+            {
+                target:"_blank",
+                class:"dropdown-item",
+                href:"https://www.instagram.com/p/CKrHNDmn-8s/",
+                nombre:"Geocerca Ionic"
+            },
+];
 
 var menujs = [
     {
@@ -144,34 +164,6 @@ var trabajo_grado_luis = [
 var proyectos_realizados_luis = [
     {
         id:1,
-        href:"https://www.facebook.com/PdvsaROriente/",
-        src:"proyectos/pdvsa.svg",
-        nombre:"Migración del servicio de impresión a tecnología tecnología de información libre",
-        tecnologia:[
-            {
-                id:1,
-                nombre:"bash",
-                porcentaje:40,
-            },
-            {
-                id:2,
-                nombre:"samba",
-                porcentaje:20,
-            },
-            {
-                id:3,
-                nombre:"cups",
-                porcentaje:20,
-            },
-            {
-                id:4,
-                nombre:"Debian",
-                porcentaje:20,
-            },
-        ],
-    },
-    {
-        id:2,
         href:"https://www.facebook.com/Ricana-Tours-107912725995677/",
         src:"proyectos/ricana-tours.svg" ,
         nombre:"Aplicación web con codeigniter en ricana tours",
@@ -224,7 +216,7 @@ var proyectos_realizados_luis = [
         ],
     },
     {
-        id:3,
+        id:2,
         href:"https://www.facebook.com/Ricana-Tours-107912725995677/",
         src:"proyectos/ricana-tours.svg", 
         nombre:"Aplicación web con cakePHP en ricana tours",
@@ -234,5 +226,33 @@ var proyectos_realizados_luis = [
                 porcentaje:60,
             },
         ],
-    }
+    },
+    {
+        id:3,
+        href:"https://www.facebook.com/PdvsaROriente/",
+        src:"proyectos/pdvsa.svg",
+        nombre:"Migración del servicio de impresión a tecnología tecnología de información libre",
+        tecnologia:[
+            {
+                id:1,
+                nombre:"bash",
+                porcentaje:40,
+            },
+            {
+                id:2,
+                nombre:"samba",
+                porcentaje:20,
+            },
+            {
+                id:3,
+                nombre:"cups",
+                porcentaje:20,
+            },
+            {
+                id:4,
+                nombre:"Debian",
+                porcentaje:20,
+            },
+        ],
+    },
 ];

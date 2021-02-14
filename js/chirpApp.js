@@ -3,6 +3,8 @@
 
 var app = angular.module('chirpApp', ['ngRoute', 'ngResource']).run(function($rootScope) {
         $rootScope.contactos = contactosjs;
+        $rootScope.proyectos_realizados_luis = proyectos_realizados_luis;
+        $rootScope.cursos = cursosjs;
 });
 
 app.controller('myCtrl', function(postService, $scope, $rootScope){
