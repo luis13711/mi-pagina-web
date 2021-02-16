@@ -61,11 +61,83 @@ app.config(function($routeProvider){
         }).when('/contacto_yolanda', {
                 templateUrl: 'template/contacto_yolanda.html',
                 controller: 'contactoYolandaController'
+        }).when('/contacto_patricia', {
+                templateUrl: 'template/contacto_patricia.html',
+                controller: 'contactoPatriciaController'
+        }).when('/contacto_ana', {
+                templateUrl: 'template/contacto_ana.html',
+                controller: 'contactoAnaController'
         })
 });
 
 app.factory('postService', function($resource){
 	return $resource('/api/posts/:id');
+});
+
+app.controller('contactoAnaController', function(postService, $scope, $rootScope){
+	$scope.sesion = sesionjs;
+        $scope.menu = menujs;
+        $scope.contactos = contactosjs;
+        $scope.tecnologia = []
+        $scope.proyectos = servicio_comunitario_luis;
+        $scope.proyectos_realizados_luis = proyectos_realizados_luis;
+        $scope.trabajo_grado_luis = trabajo_grado_luis;
+        $scope.ventas_madre = ventas_madrejs;
+        $scope.obtenerDetalleTrabajoGrado = function(id){
+                console.log('obtenerDetalleTrabajoGrado')
+                var proyecto = {};
+                for(let proyecto2 of $scope.trabajo_grado_luis){
+                        if(proyecto2.id == id){
+                                proyecto = proyecto2;
+                        }
+                }
+                $scope.tecnologia = proyecto.tecnologia
+                
+        };
+        $scope.obtenerDetalle = function(id){
+                console.log('obtenerDetalle')
+                var proyecto = {};
+                for(let proyecto2 of $scope.proyectos_realizados_luis){
+                        if(proyecto2.id == id){
+                                proyecto = proyecto2;
+                        }
+                }
+                $scope.tecnologia = proyecto.tecnologia
+                
+        };
+});
+
+app.controller('contactoPatriciaController', function(postService, $scope, $rootScope){
+	$scope.sesion = sesionjs;
+        $scope.menu = menujs;
+        $scope.contactos = contactosjs;
+        $scope.tecnologia = []
+        $scope.proyectos = servicio_comunitario_luis;
+        $scope.proyectos_realizados_luis = proyectos_realizados_luis;
+        $scope.trabajo_grado_luis = trabajo_grado_luis;
+        $scope.ventas_madre = ventas_madrejs;
+        $scope.obtenerDetalleTrabajoGrado = function(id){
+                console.log('obtenerDetalleTrabajoGrado')
+                var proyecto = {};
+                for(let proyecto2 of $scope.trabajo_grado_luis){
+                        if(proyecto2.id == id){
+                                proyecto = proyecto2;
+                        }
+                }
+                $scope.tecnologia = proyecto.tecnologia
+                
+        };
+        $scope.obtenerDetalle = function(id){
+                console.log('obtenerDetalle')
+                var proyecto = {};
+                for(let proyecto2 of $scope.proyectos_realizados_luis){
+                        if(proyecto2.id == id){
+                                proyecto = proyecto2;
+                        }
+                }
+                $scope.tecnologia = proyecto.tecnologia
+                
+        };
 });
 
 app.controller('contactoYolandaController', function(postService, $scope, $rootScope){
@@ -102,7 +174,8 @@ app.controller('contactoYolandaController', function(postService, $scope, $rootS
 });
 
 app.controller('emprenderInternetController', function(postService, $scope, $rootScope){
-	$scope.sesion = sesionjs;
+	$scope.emprender_internet = emprender_internetjs;
+        $scope.sesion = sesionjs;
         $scope.menu = menujs;
         $scope.contactos = contactosjs;
         $scope.tecnologia = []
@@ -261,8 +334,20 @@ app.controller('contactoLuisController', function(postService, $scope, $rootScop
         $scope.proyectos = servicio_comunitario_luis;
         $scope.proyectos_realizados_luis = proyectos_realizados_luis;
         $scope.trabajo_grado_luis = trabajo_grado_luis;
+        $scope.experiencia_luis = experiencia_luisjs;
+        $scope.obtenerDetalleExperiencia = function(id){
+                //console.log('obtenerDetalleTrabajoGrado')
+                var proyecto = {};
+                for(let proyecto2 of $scope.experiencia_luis){
+                        if(proyecto2.id == id){
+                                proyecto = proyecto2;
+                        }
+                }
+                $scope.tecnologia = proyecto.tecnologia
+                
+        };
         $scope.obtenerDetalleTrabajoGrado = function(id){
-                console.log('obtenerDetalleTrabajoGrado')
+                //console.log('obtenerDetalleTrabajoGrado')
                 var proyecto = {};
                 for(let proyecto2 of $scope.trabajo_grado_luis){
                         if(proyecto2.id == id){
@@ -273,7 +358,7 @@ app.controller('contactoLuisController', function(postService, $scope, $rootScop
                 
         };
         $scope.obtenerDetalle = function(id){
-                console.log('obtenerDetalle')
+                //console.log('obtenerDetalle')
                 var proyecto = {};
                 for(let proyecto2 of $scope.proyectos_realizados_luis){
                         if(proyecto2.id == id){

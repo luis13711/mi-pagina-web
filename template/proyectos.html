@@ -12,7 +12,11 @@
             ng-repeat="casa in proyectos_realizados_luis"
             class="col-sm-6 col-md-3">
             <!--  <h4>{{ casa.nombre }}</h4> -->
-             <a target="_blank" class="dropdown-item" href="{{ casa.href }}">
+             <a 
+                title="{{casa.nombre}}"
+                target="_blank" 
+                class="dropdown-item" 
+                href="{{ casa.href }}">
                 <img  src="{{casa.src}}" style="width:100%">
             </a>
        </div>

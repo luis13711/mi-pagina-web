@@ -60,7 +60,11 @@
             ng-repeat="casa in trabajo_grado_luis"
             class="col-sm-6 col-md-3">
             <!--  <h4>{{ casa.nombre }}</h4> -->
-             <a target="_blank" class="dropdown-item" href="{{ casa.href }}">
+             <a 
+              title="{{casa.nombre}}"
+              target="_blank" 
+              class="dropdown-item" 
+              href="{{ casa.href }}">
                 <img  src="{{casa.src}}" style="width:100%" title="{{ casa.nombre }}">
                 <p style="overflow: hidden;">{{ casa.nombre }}</p>
             </a>
@@ -91,19 +95,27 @@
       <br>
       <div class="collapse" id="collapTapExperiencia">
         <div class="row">
-          <div class="col-sm-6 col-md-3">
-            <a target="_blank" href="https://www.facebook.com/PdvsaROriente/">
-              <img src="proyectos/pdvsa.svg" style="width:100%">
+          <div 
+            ng-repeat="casa in experiencia_luis"
+            class="col-sm-6 col-md-3">
+            <!--  <h4>{{ casa.nombre }}</h4> -->
+             <a 
+              title="{{casa.nombre}}"
+              target="_blank" 
+              class="dropdown-item" 
+              href="{{ casa.href }}">
+                <img  src="{{casa.src}}" style="width:100%" title="{{ casa.nombre }}">
+                <p style="overflow: hidden;">{{ casa.nombre }}</p>
             </a>
-            <div class="w3-display-topleft w3-black w3-padding">Proyecto de grado en PDVSA Refinación Oriente</div>
+            <button 
+              ng-click="obtenerDetalleExperiencia(casa.id)"
+              type="button" 
+              class="btn btn-info" 
+              data-toggle="modal" 
+              data-target="#exampleModal">
+              Detalle
+            </button>
             
-          </div>
-          <div class="col-sm-6 col-md-3">
-            
-            <a target="_blank" href="https://www.facebook.com/Ricana-Tours-107912725995677/">
-              <img src="proyectos/ricana-tours.svg" style="width:100%">
-            </a>
-            <div>Proyectos para la empresa ricana tours</div>
           </div>
         </div>
       </div>

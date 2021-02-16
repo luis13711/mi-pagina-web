@@ -1,44 +1,4 @@
-
-    <section class="container-fluid">
-       
-        <div class="row">
-            <div class="col-sm-6 col-md-3">
-              <a target="_blank" href="https://www.linkedin.com/in/luis-correa-36477a1b7/">
-              <img src="w3images/Luis_Correa.jpg" style="width:100%">
-              </a>
-              <h3>Luis Correa</h3>
-              <p>Ingeniero en Computación</p>
-              <p>Soy un ingeniero en computación. Mis objetivos son responsabilidad, creatividad, voluntad de saber, proactividad y trabajo en equipo..</p>
-            </div>
-        </div>
-    </section>
-    
-  <!-- Page content -->
-  <section class="container-fluid" style="max-width:1564px">    
-    <h1 style="text-align:center;">Ingeniería en Computación</h1>
-    <h2>
-    PROYECTOS
-    </h2>
-    <h3>
-        <ul>
-            <li>Levantamientos</li>
-            <li>Documentos</li>
-            <li>Diseño de diagramas UML</li>
-        </ul>
-    </h3>
-    <h2>
-    ASESORÍA (A nivel nacional)
-    </h2>
-    <h3>
-        <ul>
-            <li>Levantamientos</li>
-            <li>Presupuestos</li>
-            <li>Programas de trabajo</li>
-        </ul>
-    </h3>
-  </section>
-  
-  <!-- Page content -->
+<!-- Page content -->
   <section class="container-fluid" style="max-width:1564px">
     <div class="card" style="width: 100%;">
       <div class="card-body">
@@ -49,200 +9,28 @@
           data-target="#collapTapGrado" 
           aria-expanded="false" 
           aria-controls="collapTapGrado">
-          Trabajo de grado
+          Ejemplos
         </button>
         <br>
         <br>
         <div class="collapse show" id="collapTapGrado">
           <div class="row">
             <div 
-              ng-repeat="casa in trabajo_grado_luis"
+              ng-repeat="casa in emprender_internet"
               class="col-sm-6 col-md-3">
               <!--  <h4>{{ casa.nombre }}</h4> -->
                <a target="_blank" class="dropdown-item" href="{{ casa.href }}">
                   <img  src="{{casa.src}}" style="width:100%" title="{{ casa.nombre }}">
                   <p style="overflow: hidden;">{{ casa.nombre }}</p>
               </a>
-              <button 
-                ng-click="obtenerDetalleTrabajoGrado(casa.id)"
-                type="button" 
-                class="btn btn-info" 
-                data-toggle="modal" 
-                data-target="#exampleModal">
-                Detalle
-              </button>
-              
             </div>
           </div>
         </div>
         <br>
         <hr>
-        <button 
-          class="btn btn-secondary btn-lg mx-auto" 
-          type="button" 
-          data-toggle="collapse" 
-          data-target="#collapTapExperiencia" 
-          aria-expanded="false" 
-          aria-controls="collapTapExperiencia">
-          Experiencia
-        </button>
-        <br>
-        <br>
-        <div class="collapse" id="collapTapExperiencia">
-          <div class="row">
-            <div class="col-sm-6 col-md-3">
-              <a target="_blank" href="https://www.facebook.com/PdvsaROriente/">
-                <img src="proyectos/pdvsa.svg" style="width:100%">
-              </a>
-              <div class="w3-display-topleft w3-black w3-padding">Proyecto de grado en PDVSA Refinación Oriente</div>
-              
-            </div>
-            <div class="col-sm-6 col-md-3">
-              
-              <a target="_blank" href="https://www.facebook.com/Ricana-Tours-107912725995677/">
-                <img src="proyectos/ricana-tours.svg" style="width:100%">
-              </a>
-              <div>Proyectos para la empresa ricana tours</div>
-            </div>
-          </div>
-        </div>
-        <br>
-        <hr>
-        <button 
-          class="btn btn-secondary btn-lg mx-auto" 
-          type="button" 
-          data-toggle="collapse" 
-          data-target="#collapTapProyectos" 
-          aria-expanded="false" 
-          aria-controls="collapTapProyectos">
-          Proyectos realizados
-        </button>
-        <br>
-        <br>
-        <div class="collapse" id="collapTapProyectos">
-          <div class="row">
-            <div 
-              ng-repeat="casa in proyectos_realizados_luis"
-              class="col-sm-6 col-md-3">
-              <!--  <h4>{{ casa.nombre }}</h4> -->
-               <a target="_blank" class="dropdown-item" href="{{ casa.href }}">
-                  <img  src="{{casa.src}}" style="width:100%" title="{{ casa.nombre }}">
-                  <p style="overflow: hidden;">{{ casa.nombre }}</p>
-              </a>
-              <button 
-                ng-click="obtenerDetalle(casa.id)"
-                type="button" 
-                class="btn btn-info" 
-                data-toggle="modal" 
-                data-target="#exampleModal">
-                Detalle
-              </button>
-              
-            </div>
-                 
-        </div>
-        <br>
-        <hr>
-        <button 
-          class="btn btn-secondary btn-lg mx-auto" 
-          type="button" 
-          data-toggle="collapse" 
-          data-target="#collapTapSoporteTecnico" 
-          aria-expanded="false" 
-          aria-controls="collapTapSoporteTecnico">
-          Soporte tecnico
-        </button>
-        <br>
-        <br>
-        <div class="collapse" id="collapTapSoporteTecnico">
-          <div class="row">
-            <div class="col-sm-6 col-md-3">
-              
-              <img src="w3images/house5.jpg" style="width:100%">
-              <div>Summer House</div>
-            </div>
-          </div>
-        </div>
-        <br>
-        <hr>
-        <button 
-          class="btn btn-secondary btn-lg mx-auto" 
-          type="button" 
-          data-toggle="collapse" 
-          data-target="#collapTapServicioComunitario" 
-          aria-expanded="false" 
-          aria-controls="collapTapServicioComunitario">
-          Servicio comunitario
-        </button>
-        <br>
-        <br>
-        <div class="collapse" id="collapTapServicioComunitario">
-          <div class="row">
-            <div 
-                ng-repeat="casa in proyectos"
-                class="col-sm-6 col-md-3">
-                <!--  <h4>{{ casa.nombre }}</h4> -->
-                 <a target="_blank" class="dropdown-item" href="{{ casa.url }}">
-                    <img  src="{{casa.imagen}}" style="width:100%">
-                </a>
-            </div>
-          </div>
-        </div>
-      </div>
+       
     </div>  
-    <br>
-    <hr> 
-    <!-- Modal -->
-    <div 
-    class="modal fade" 
-    id="exampleModal" 
-    tabindex="-1" 
-    role="dialog" 
-    aria-labelledby="exampleModalLabel" 
-    aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Tecnologías empleadas</h5>
-          <button 
-            type="button" 
-            class="close" 
-            data-dismiss="modal" 
-            aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <div 
-            ng-repeat="tecnologia in tecnologia">
-            <div class="row">
-              <div 
-                class="col-sm-3 col-md-3">
-                {{tecnologia.nombre}}
-              </div>
-              <div 
-                class="col-sm-3 col-md-3">
-                <progress id="file" max="100" value="{{ tecnologia.porcentaje }}" title="{{tecnologia.nombre}} - {{tecnologia.porcentaje}}%">{{tecnologia.porcentaje}}%</progress>
-              </div>
-              <div 
-                class="col-sm-3 col-md-3">
-                {{tecnologia.porcentaje}}%
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="modal-footer">
-          <button 
-            type="button" 
-            class="btn btn-secondary" 
-            data-dismiss="modal">
-            Close
-          </button>
-        </div>
-      </div>
-    </div>
-    
-    </div>   
+
   </section>
   
   
