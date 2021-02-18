@@ -398,7 +398,7 @@ var serviciosjs = [
 },
 {
     nombre:"eMarketing Digital",
-    descripcion:"La publicidad por correo o email comercial, es enviar un mensaje comercial directamente utilizando como canal el correo electrónico. En su sentido más amplio, cada correo electrónico que se envía a un cliente o potencial cliente puede ser considerado como publicidad por correo electrónico. Normalmente implica utilizar un correo para enviar anuncios, peticiones de negocios, solicitar ventas o donaciones"
+    descripcion:"La publicidad por correo o email comercial, es enviar un mensaje comercial directamente utilizando como canal el correo electrónico. Envía a un cliente potencial anuncios, peticiones de negocios, solicitar ventas o donaciones publicidad por correo electrónico"
 },
 {
     nombre:"Posicionamiento en buscadores",
