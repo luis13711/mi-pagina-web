@@ -41,4 +41,13 @@ and open the template in the editor.
 .color-footer {
   background-color: #8c8989;
 }
+
+.caja{
+  background-color:white;
+}
+.caja:hover{
+  background-color: rgba(251, 251, 251, 0.2);
+}
+
+
 /*# sourceMappingURL=style.css.map */

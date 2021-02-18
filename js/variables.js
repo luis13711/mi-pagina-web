@@ -9,6 +9,14 @@ var emprender_internetjs = [
         nombre:"Crear un bot para tu página web con chatfuel",
         src:"proyectos/ricana-tours.svg" ,
     },
+    {
+        id:2,
+        target:"_blank",  
+        class:"dropdown-item", 
+        href:"https://www.udemy.com/course/adp-bonao-facebook-como-herramienta-educativa/learn/lecture/13147022?start=0#overview",
+        nombre:"Crea tu página en facebook",
+        src:"proyectos/ricana-tours.svg" ,
+    },
 ];
 
 var cursosjs = [
@@ -377,4 +385,43 @@ var experiencia_luisjs = [
             },
         ],
     },
+];
+
+var serviciosjs = [
+{
+    nombre:"Diseño y Desarrollo web",
+    descripcion:"Diseño, desarrollo y creación de aplicaciones web."
+},
+{
+    nombre:"Diseño de app para ventas online",
+    descripcion:"Diseño, desarrollo y creación de aplicativo para ventas online, para poder vender productos por internet."
+},
+{
+    nombre:"eMarketing Digital",
+    descripcion:"La publicidad por correo o email comercial, es enviar un mensaje comercial directamente utilizando como canal el correo electrónico. En su sentido más amplio, cada correo electrónico que se envía a un cliente o potencial cliente puede ser considerado como publicidad por correo electrónico. Normalmente implica utilizar un correo para enviar anuncios, peticiones de negocios, solicitar ventas o donaciones"
+},
+{
+    nombre:"Posicionamiento en buscadores",
+    descripcion:"Posicionamiento en buscadores, optimización en motores de búsqueda o SEO, mejorar el posicionamiento de un sitio web en la lista de resultados de Google, Bing, u otros buscadores de internet."
+},
+{
+    nombre:"SEO & SEM",
+    descripcion:"Mercadotecnia en buscadores web (SEM) promovemos el contenido digital para aumentar la visibilidad y posicionamiento en las páginas de resultados del motor de búsqueda. El posicionamiento en motores de búsqueda (SEO), el pago de anuncios en diversas plataformas digitales (redes sociales, móviles, plataformas de videos, banners), pago Por Clic (PPC), la publicidad contextual​."
+},
+{
+    nombre:"Diseño Gráfico",
+    descripcion:"Diseño y creación de logotipos, imagen corporativa, branding, diseño de impresión, rebranding, creamos diseño gráfico para aplicaciones web."
+},
+{
+    nombre:"Diseño y Desarrollo Aplicativos Móviles",
+    descripcion:"Diseño, desarrollo y creación de aplicaciones móviles para Android."
+},
+{
+    nombre:"Mantenimiento y gestión de aplicaciones",
+    descripcion:"Servicio, soporte y mantenimiento  de escritorio, móviles y web."
+},
+{
+    nombre:"Alojamiento web",
+    descripcion:"Alojamiento web (hosting) para poder almacenar información, imágenes, vídeo, o cualquier contenido accesible vía web."
+},
 ];

@@ -316,6 +316,7 @@ app.controller('contactoEmpresaController', function(postService, $scope, $rootS
 
 app.controller('mainController', function(postService, $scope, $rootScope){
 	//$scope.sesion = sesionjs;
+        $scope.servicios = serviciosjs;
         $scope.menu = menujs;
         $scope.contactos = contactosjs;
         $scope.descripcion_p = {
