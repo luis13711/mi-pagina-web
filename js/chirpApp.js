@@ -19,7 +19,10 @@ app.controller('myCtrl', function(postService, $scope, $rootScope){
 });
 
 app.config(function($routeProvider){
-	$routeProvider
+        //funcionara cuando se trabaje con un servidor express, django
+	//$routeProvider.html5Mode(true);
+        
+        $routeProvider
 		//the timeline display
 		.when('/', {
 			templateUrl: 'template/main.html',
@@ -68,6 +71,9 @@ app.config(function($routeProvider){
                 templateUrl: 'template/contacto_ana.html',
                 controller: 'contactoAnaController'
         })
+        
+        
+        
 });
 
 app.factory('postService', function($resource){

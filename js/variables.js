@@ -398,7 +398,7 @@ var serviciosjs = [
 },
 {
     nombre:"eMarketing Digital",
-    descripcion:"La publicidad por correo o email comercial, es enviar un mensaje comercial directamente utilizando como canal el correo electrónico. Envía a un cliente potencial anuncios, peticiones de negocios, solicitar ventas o donaciones publicidad por correo electrónico"
+    descripcion:"La publicidad por correo o email comercial, es enviar un mensaje comercial directamente utilizando como canal el correo electrónico. Envía a un cliente potencial anuncios, peticiones de negocios, solicitar ventas o donaciones publicidad."
 },
 {
     nombre:"Posicionamiento en buscadores",
@@ -406,7 +406,7 @@ var serviciosjs = [
 },
 {
     nombre:"SEO & SEM",
-    descripcion:"Mercadotecnia en buscadores web (SEM) promovemos el contenido digital para aumentar la visibilidad y posicionamiento en las páginas de resultados del motor de búsqueda. El posicionamiento en motores de búsqueda (SEO), el pago de anuncios en diversas plataformas digitales (redes sociales, móviles, plataformas de videos, banners), pago Por Clic (PPC), la publicidad contextual​."
+    descripcion:"Mercadotecnia en buscadores web (SEM) promovemos el contenido digital para aumentar la visibilidad y posicionamiento en las páginas de resultados del motor de búsqueda. El posicionamiento en motores de búsqueda (SEO), móviles."
 },
 {
     nombre:"Diseño Gráfico",
