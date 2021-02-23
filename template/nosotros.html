@@ -1,0 +1,53 @@
+<section class="container-fluid">
+  <br>
+  <hr>
+        <h3 style="text-align: center; font-style: italic;">Nosotros</h3>
+        <br>
+        <hr>
+      <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
+        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+        laboris nisi ut aliquip ex ea commodo consequat.
+      </p> -->
+    <div class="row">
+      <!-- <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div ng-repeat="contacto in contactos" class="carousel-item">
+            <a target="_blank" href="{{contacto.url}}">
+            <img class="d-block w-100" src="{{contacto.img}}" alt="First slide">
+            </a>
+            <h3>{{contacto.nombre}}</h3>
+            <p>{{contacto.titulo}}</p>
+            <p>{{contacto.descripcion}}</p>
+          </div>
+        </div>
+      </div> -->
+      <!-- <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner"
+        ng-repeat="contacto in contactos">
+          <div ng-if="contactoid==1" class="carousel-item active">
+            <a target="_blank" href="{{contacto.url}}">
+            <img class="d-block w-100" src="{{contacto.img}}" alt="First slide">
+            </a>
+          </div>
+          <div ng-else class="carousel-item">
+            <a target="_blank" href="{{contacto.url}}">
+              <img class="d-block w-100" src="..." alt="">
+            </a>  
+          </div>
+        </div>
+      </div> -->
+     <div
+        class="col-sm-6 col-md-3"
+        ng-repeat="contacto in contactos">
+        <a target="_blank" href="{{contacto.url}}">
+      <img 
+          src="{{contacto.img}}" 
+          width="250"
+          height="250">
+        </a>
+      <h3 style="font-style: italic !important;">{{contacto.nombre}}</h3>
+      <p style="font-style: italic !important;">{{contacto.titulo}}</p>
+      <p style="font-style: italic !important;">{{contacto.descripcion}}</p>
+    </div> 
+    </div>
+    </section>

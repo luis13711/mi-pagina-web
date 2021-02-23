@@ -1,0 +1,25 @@
+<section class="container-fluid" style="font-style: italic !important;">
+    <div ng-model="descripcion_p"  style="text-align: center;">
+        <br>
+        <hr>
+            <h3>{{descripcion_p.titulo}}</h3>
+            <p>{{descripcion_p.descripcion}}</p>
+            <br>
+            <hr>
+    </div>
+    <div class="row" style="font-style: italic !important;">
+        <div 
+            ng-repeat="casa in proyectos_realizados_luis"
+            class="col-sm-6 col-md-3">
+            <!--  <h4>{{ casa.nombre }}</h4> -->
+             <a 
+             style="font-style: italic !important;"
+                title="{{casa.nombre}}"
+                target="_blank" 
+                class="dropdown-item" 
+                href="{{ casa.href }}">
+                <img  src="{{casa.src}}" style="width:100%">
+            </a>
+       </div>
+    </div>
+</section>
