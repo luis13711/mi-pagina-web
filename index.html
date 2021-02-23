@@ -11,7 +11,10 @@
     <link rel="shortcut icon" type="image/x-icon" href="principal.ico">
        
     <!-- Estilos Bootstrap 4 -->
-    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
     <!-- Iconos fonts awesome 5 -->
     <link rel="stylesheet" href="css/fontawesome.min.css">
     <script src="js/all.js"></script>
@@ -48,59 +51,17 @@
         <div ng-include="'template/proyectos.html'"></div> -->
 
 
-<!-- Load Facebook SDK for JavaScript -->
-<div id="fb-root"></div>
-<script>
-  window.fbAsyncInit = function() {
-    FB.init({
-      xfbml            : true,
-      version          : 'v9.0'
-    });
-  };
-
-  (function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = 'https://connect.facebook.net/es_ES/sdk/xfbml.customerchat.js';
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-
-<!-- Your Chat Plugin code -->
-<div class="fb-customerchat"
-  attribution=setup_tool
-  page_id="1893665554007076">
-</div>
 
         <!-- Zona del pié -->
         <div ng-include="'template/footer.html'"></div>
         <!-- jQuery first, then Tether, then Bootstrap JS. -->
-        <script src="js/jquery-3.3.1.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script>
-          /* function cargarHeader(){
-                  var header = document.getElementById('headerContactosId');
-                  //var header = document.getElementById("listaDesordenada").getElementsByTagName("li");
-                  //header.innerHTML='';
-                  var cadena = '';
-                  for(let contacto of contactosjs){
-                    var a=document.createElement('a');
-                    a.innerText =contacto.nombre;
-                    a.href = contacto.href;
-                    a.classList.add("dropdown-item");
-                    header.appendChild(a);
-                    cadena+='<a  class="dropdown-item" href="'+contacto.href+'">'+contacto.nombre+'</a>'
-                  }
-                  console.log('cadena')
-                  console.log(cadena)
-                  //header.innerHTML=cadena;
-          }
-          
-          function iniciar(){
-                  cargarHeader();
-          }
-          window.onload=iniciar;  */
-          </script>
+        <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  
+      
         
 
         
