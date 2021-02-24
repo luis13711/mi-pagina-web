@@ -46,12 +46,13 @@
       <button 
         class="btn btn-secondary btn-lg mx-auto" 
         type="button" 
-        data-toggle="collapse" 
-        data-target="#collapTapGrado" 
+        data-bs-toggle="collapse" 
+        data-bs-target="#collapTapGrado" 
         aria-expanded="false" 
         aria-controls="collapTapGrado">
         Trabajo de grado
       </button>
+      
       <br>
       <br>
       <div class="collapse show" id="collapTapGrado">
@@ -71,9 +72,9 @@
             <button 
               ng-click="obtenerDetalleTrabajoGrado(casa.id)"
               type="button" 
-              class="btn btn-info" 
-              data-toggle="modal" 
-              data-target="#exampleModal">
+              class="btn btn-info"
+              data-bs-toggle="modal" 
+              data-bs-target="#exampleModal">
               Detalle
             </button>
             
@@ -85,8 +86,8 @@
       <button 
         class="btn btn-secondary btn-lg mx-auto" 
         type="button" 
-        data-toggle="collapse" 
-        data-target="#collapTapExperiencia" 
+        data-bs-toggle="collapse" 
+        data-bs-target="#collapTapExperiencia" 
         aria-expanded="false" 
         aria-controls="collapTapExperiencia">
         Experiencia
@@ -110,12 +111,11 @@
             <button 
               ng-click="obtenerDetalleExperiencia(casa.id)"
               type="button" 
-              class="btn btn-info" 
-              data-toggle="modal" 
-              data-target="#exampleModal">
+              class="btn btn-info"
+              data-bs-toggle="modal" 
+              data-bs-target="#exampleModal">
               Detalle
             </button>
-            
           </div>
         </div>
       </div>
@@ -124,8 +124,8 @@
       <button 
         class="btn btn-secondary btn-lg mx-auto" 
         type="button" 
-        data-toggle="collapse" 
-        data-target="#collapTapProyectos" 
+        data-bs-toggle="collapse" 
+        data-bs-target="#collapTapProyectos" 
         aria-expanded="false" 
         aria-controls="collapTapProyectos">
         Proyectos realizados
@@ -145,22 +145,25 @@
             <button 
               ng-click="obtenerDetalle(casa.id)"
               type="button" 
-              class="btn btn-info" 
-              data-toggle="modal" 
-              data-target="#exampleModal">
+              class="btn btn-info"
+              data-bs-toggle="modal" 
+              data-bs-target="#exampleModal">
               Detalle
             </button>
-            
           </div>
                
+      </div>
+      <br>
+      <hr>
+      
       </div>
       <br>
       <hr>
       <button 
         class="btn btn-secondary btn-lg mx-auto" 
         type="button" 
-        data-toggle="collapse" 
-        data-target="#collapTapSoporteTecnico" 
+        data-bs-toggle="collapse" 
+        data-bs-target="#collapTapSoporteTecnico" 
         aria-expanded="false" 
         aria-controls="collapTapSoporteTecnico">
         Soporte tecnico
@@ -181,8 +184,8 @@
       <button 
         class="btn btn-secondary btn-lg mx-auto" 
         type="button" 
-        data-toggle="collapse" 
-        data-target="#collapTapServicioComunitario" 
+        data-bs-toggle="collapse" 
+        data-bs-target="#collapTapServicioComunitario" 
         aria-expanded="false" 
         aria-controls="collapTapServicioComunitario">
         Servicio comunitario
@@ -201,7 +204,6 @@
           </div>
         </div>
       </div>
-    </div>
   </div>  
   <br>
   <hr> 
@@ -217,13 +219,7 @@
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title" id="exampleModalLabel">Tecnologías empleadas</h5>
-        <button 
-          type="button" 
-          class="close" 
-          data-dismiss="modal" 
-          aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
         <div 
@@ -235,7 +231,24 @@
             </div>
             <div 
               class="col-sm-3 col-md-3">
-              <progress id="file" max="100" value="{{ tecnologia.porcentaje }}" title="{{tecnologia.nombre}} - {{tecnologia.porcentaje}}%">{{tecnologia.porcentaje}}%</progress>
+              <!-- <progress 
+                id="file" 
+                max="100" 
+                value="{{ tecnologia.porcentaje }}" 
+                title="{{tecnologia.nombre}} - {{tecnologia.porcentaje}}%">
+                {{tecnologia.porcentaje}}%
+              </progress> -->
+              <div class="progress">
+                <div 
+                  title="{{tecnologia.nombre}} - {{tecnologia.porcentaje}}%"
+                  class="progress-bar" 
+                  role="progressbar" 
+                  aria-valuenow="{{ tecnologia.porcentaje }}" 
+                  aria-valuemin="0" 
+                  aria-valuemax="100">
+                  {{tecnologia.porcentaje}}
+                </div>
+              </div>
             </div>
             <div 
               class="col-sm-3 col-md-3">
@@ -247,8 +260,8 @@
       <div class="modal-footer">
         <button 
           type="button" 
-          class="btn btn-secondary" 
-          data-dismiss="modal">
+          class="btn btn-danger" 
+          data-bs-dismiss="modal">
           Close
         </button>
       </div>
