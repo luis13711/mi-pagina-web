@@ -110,7 +110,7 @@ var contactosjs = [
 {
     id:1,
     href:"#/contacto_luis",
-    img:"images/Luis_Correa.jpeg",
+    img:"images/Luis_Correa.webp",
     alt:"Luis",
     nombre:"Luis Correa",
     titulo:"Ingeniero en Computación",
@@ -120,7 +120,7 @@ var contactosjs = [
 {
     id:2,
     href:"#/contacto_percy",
-    img:"images/Percy Correa.jpeg",
+    img:"images/Percy Correa.webp",
     alt:"Percy",
     nombre:"Percy Correa",
     titulo:"Ingeniero Civil",
@@ -130,7 +130,7 @@ var contactosjs = [
 {
     id:3,
     href:"#/contacto_juan",
-    img:"images/Juan Correa.jpeg",
+    img:"images/Juan Correa.webp",
     alt:"Juan",
     nombre:"Juan Correa",
     titulo:"Asesor Comercial",
@@ -140,7 +140,7 @@ var contactosjs = [
 {
     id:4,
     href:"#/contacto_yolanda",
-    img:"images/Yolanda_Yancel.jpeg",
+    img:"images/Yolanda_Yancel.webp",
     alt:"Yolanda",
     nombre:"Yolanda Yancel",
     titulo:"Contador Publico",
@@ -150,7 +150,7 @@ var contactosjs = [
 {
     id:5,
     href:"#/contacto_patricia",
-    img:"images/Patricia Correa.jpeg",
+    img:"images/Patricia Correa.webp",
     alt:"Patricia",
     nombre:"Patricia Correa",
     titulo:"Medico Cirujano",
@@ -160,7 +160,7 @@ var contactosjs = [
 {
     id:6,
     href:"#/contacto_ana",
-    img:"images/Ana Correa.jpeg",
+    img:"images/Ana Correa.webp",
     alt:"Patricia",
     nombre:"Ana Correa",
     titulo:"Ingenieria Quimica",
