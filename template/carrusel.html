@@ -1,0 +1,109 @@
+<style>
+/*línea de tiempo*/
+@keyframes miAnimacion{
+  0%{
+    opacity: 1;
+  }
+  20%{
+    opacity: 1;
+  }
+  30%{
+    opacity: 0;
+  }
+  90%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes miAnimacion{
+  0%{
+    opacity: 1;
+  }
+  20%{
+    opacity: 1;
+  }
+  30%{
+    opacity: 0;
+  }
+  90%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes miAnimacion{
+  0%{
+    opacity: 1;
+  }
+  20%{
+    opacity: 1;
+  }
+  30%{
+    opacity: 0;
+  }
+  90%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+#fondo1{
+  animation:miAnimacion 10s linear 18s infinite;
+  -webkit-animation:miAnimacion 10s linear 18s infinite;
+  -moz-animation:miAnimacion 10s linear 18s infinite;
+}
+
+
+#fondo2{
+  animation:miAnimacion 10s linear 12s infinite;
+  -webkit-animation:miAnimacion 10s linear 12s infinite;
+  -moz-animation:miAnimacion 10s linear 12s infinite;
+}
+
+
+#fondo3{
+  animation:miAnimacion 10s linear 6s infinite;
+  -webkit-animation:miAnimacion 10s linear 6s infinite;
+  -moz-animation:miAnimacion 10s linear 6s infinite;
+}
+
+
+#fondo4{
+  animation:miAnimacion 10s linear 0s infinite;
+  -webkit-animation:miAnimacion 10s linear 0s infinite;
+  -moz-animation:miAnimacion 10s linear 0s infinite;
+}
+
+#fondo5{
+  animation:miAnimacion 10s linear 24s infinite;
+  -webkit-animation:miAnimacion 10s linear 24s infinite;
+  -moz-animation:miAnimacion 10s linear 24s infinite;
+}
+
+#fondo6{
+  animation:miAnimacion 10s linear 28s infinite;
+  -webkit-animation:miAnimacion 10s linear 28s infinite;
+  -moz-animation:miAnimacion 10s linear 28s infinite;
+}
+
+#fondo7{
+  animation:miAnimacion 10s linear 32s infinite;
+  -webkit-animation:miAnimacion 10s linear 32s infinite;
+  -moz-animation:miAnimacion 10s linear 32s infinite;
+}
+
+</style>
+<div class="row">
+  <div  
+      class="col-sm-6 col-md-3 py-2" ng-repeat="contacto in servicios" id="{{ contacto.id }}">
+  <h3>{{contacto.nombre}}</h3>
+  <p>{{contacto.descripcion}}</p>
+</div>
+</div>

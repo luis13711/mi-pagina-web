@@ -110,7 +110,7 @@ var contactosjs = [
 {
     id:1,
     href:"#/contacto_luis",
-    img:"w3images/Luis_Correa.jpg",
+    img:"images/Luis_Correa.jpeg",
     alt:"Luis",
     nombre:"Luis Correa",
     titulo:"Ingeniero en Computación",
@@ -120,7 +120,7 @@ var contactosjs = [
 {
     id:2,
     href:"#/contacto_percy",
-    img:"w3images/Percy Correa.jpg",
+    img:"images/Percy Correa.jpeg",
     alt:"Percy",
     nombre:"Percy Correa",
     titulo:"Ingeniero Civil",
@@ -130,7 +130,7 @@ var contactosjs = [
 {
     id:3,
     href:"#/contacto_juan",
-    img:"w3images/Juan Correa.jpg",
+    img:"images/Juan Correa.jpeg",
     alt:"Juan",
     nombre:"Juan Correa",
     titulo:"Asesor Comercial",
@@ -140,7 +140,7 @@ var contactosjs = [
 {
     id:4,
     href:"#/contacto_yolanda",
-    img:"w3images/Yolanda_Yancel.jpg",
+    img:"images/Yolanda_Yancel.jpeg",
     alt:"Yolanda",
     nombre:"Yolanda Yancel",
     titulo:"Contador Publico",
@@ -150,7 +150,7 @@ var contactosjs = [
 {
     id:5,
     href:"#/contacto_patricia",
-    img:"w3images/Patricia Correa.PNG",
+    img:"images/Patricia Correa.jpeg",
     alt:"Patricia",
     nombre:"Patricia Correa",
     titulo:"Medico Cirujano",
@@ -160,7 +160,7 @@ var contactosjs = [
 {
     id:6,
     href:"#/contacto_ana",
-    img:"w3images/Ana Correa.PNG",
+    img:"images/Ana Correa.jpeg",
     alt:"Patricia",
     nombre:"Ana Correa",
     titulo:"Ingenieria Quimica",
@@ -389,39 +389,65 @@ var experiencia_luisjs = [
 
 var serviciosjs = [
 {
+    id:"fondo1",
+    class:"carousel-item active",
+    data_bs_interval:"2000",
     nombre:"Diseño y Desarrollo web",
-    descripcion:"Diseño, desarrollo y creación de aplicaciones web."
+    descripcion:"Diseño, desarrollo y creación de aplicaciones web.",
+    alt:"des1"
 },
 {
+    id:"fondo2",
+    class:"carousel-item",
     nombre:"Diseño de app para ventas online",
-    descripcion:"Diseño, desarrollo y creación de aplicativo para ventas online, para poder vender productos por internet."
+    descripcion:"Diseño, desarrollo y creación de aplicativo para ventas online, para poder vender productos por internet.",
+    alt:"des2"
 },
 {
+    id:"fondo3",
+    class:"carousel-item",
     nombre:"eMarketing Digital",
-    descripcion:"La publicidad por correo o email comercial, es enviar un mensaje comercial directamente utilizando como canal el correo electrónico. Envía a un cliente potencial anuncios, peticiones de negocios, solicitar ventas o donaciones publicidad."
+    descripcion:"La publicidad por correo o email comercial, es enviar un mensaje comercial directamente utilizando como canal el correo electrónico. Envía a un cliente potencial anuncios, peticiones de negocios, solicitar ventas o donaciones publicidad.",
+    alt:"des3"
 },
 {
+    id:"fondo4",
+    class:"carousel-item",
     nombre:"Posicionamiento en buscadores",
-    descripcion:"Posicionamiento en buscadores, optimización en motores de búsqueda o SEO, mejorar el posicionamiento de un sitio web en la lista de resultados de Google, Bing, u otros buscadores de internet."
+    descripcion:"Posicionamiento en buscadores, optimización en motores de búsqueda o SEO, mejorar el posicionamiento de un sitio web en la lista de resultados de Google, Bing, u otros buscadores de internet.",
+    alt:"des4"
 },
 {
+    id:"fondo5",
+    class:"carousel-item",
     nombre:"SEO & SEM",
-    descripcion:"Mercadotecnia en buscadores web (SEM) promovemos el contenido digital para aumentar la visibilidad y posicionamiento en las páginas de resultados del motor de búsqueda. El posicionamiento en motores de búsqueda (SEO), móviles."
+    descripcion:"Mercadotecnia en buscadores web (SEM) promovemos el contenido digital para aumentar la visibilidad y posicionamiento en las páginas de resultados del motor de búsqueda. El posicionamiento en motores de búsqueda (SEO), móviles.",
+    alt:"des5"
 },
 {
+    id:"fondo6",
+    class:"carousel-item",
     nombre:"Diseño Gráfico",
-    descripcion:"Diseño y creación de logotipos, imagen corporativa, branding, diseño de impresión, rebranding, creamos diseño gráfico para aplicaciones web."
+    descripcion:"Diseño y creación de logotipos, imagen corporativa, branding, diseño de impresión, rebranding, creamos diseño gráfico para aplicaciones web.",
+    alt:"des6"
 },
 {
+    id:"fondo7",
+    class:"carousel-item",
     nombre:"Diseño y Desarrollo Aplicativos Móviles",
-    descripcion:"Diseño, desarrollo y creación de aplicaciones móviles para Android."
+    descripcion:"Diseño, desarrollo y creación de aplicaciones móviles para Android.",
+    alt:"des7"
 },
 {
+    class:"carousel-item",
     nombre:"Mantenimiento y gestión de aplicaciones",
-    descripcion:"Servicio, soporte y mantenimiento  de escritorio, móviles y web."
+    descripcion:"Servicio, soporte y mantenimiento  de escritorio, móviles y web.",
+    alt:"des8"
 },
 {
+    class:"carousel-item",
     nombre:"Alojamiento web",
-    descripcion:"Alojamiento web (hosting) para poder almacenar información, imágenes, vídeo, o cualquier contenido accesible vía web."
+    descripcion:"Alojamiento web (hosting) para poder almacenar información, imágenes, vídeo, o cualquier contenido accesible vía web.",
+    alt:"des9"
 },
 ];

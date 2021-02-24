@@ -49,5 +49,11 @@ and open the template in the editor.
   background-color: rgba(251, 251, 251, 0.2);
 }
 
+.banner{
+  background: url(../images/banner\ web2.jpg);
+  height: 30rem;
+  width: 100%;
+}
+
 
 /*# sourceMappingURL=style.css.map */
