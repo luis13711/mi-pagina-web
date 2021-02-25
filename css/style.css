@@ -55,5 +55,23 @@ and open the template in the editor.
   width: 100%;
 }
 
+/*nav siga a la pantalla */
+.my-fixed-item {
+  position: fixed;
+  min-height: 120px;
+  text-align: center;
+  word-wrap: break-word;
+  width: 252px;
+  background-color: aquamarine;
+}
+
+/*Bootstrap example */
+.position-fixed {
+  width: 252px;
+  min-height: 120px;
+  text-align: center;
+  background-color: aquamarine;
+}
+
 
 /*# sourceMappingURL=style.css.map */

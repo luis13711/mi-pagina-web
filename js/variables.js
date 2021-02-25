@@ -457,4 +457,16 @@ var serviciosjs = [
     descripcion:"Alojamiento web (hosting) para poder almacenar información, imágenes, vídeo, o cualquier contenido accesible vía web.",
     alt:"des9"
 },
+{
+    nombre:"Diseño responsive",
+    descripcion:"Adaptable a todas las pantallas: pc, laptop, tabletas y smartphone.",
+},
+{
+    nombre:"Certificado SSL",
+    descripcion:"Tus usuarios pueden navegar de manera segura.",
+},
+{
+    nombre:"Redes sociales",
+    descripcion:"Integración a redes sociales y botón de whatsapp."
+},
 ];
