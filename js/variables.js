@@ -120,7 +120,7 @@ var contactosjs = [
 {
     id:2,
     href:"#/contacto_percy",
-    img:"images/Percy Correa.webp",
+    img:"images/Percy_Correa.webp",
     alt:"Percy",
     nombre:"Percy Correa",
     titulo:"Ingeniero Civil",
@@ -420,8 +420,15 @@ var serviciosjs = [
 {
     id:"fondo5",
     class:"carousel-item",
-    nombre:"SEO & SEM",
+    nombre:"SEO & SEM & SMM & Analítica",
     descripcion:"Mercadotecnia en buscadores web (SEM) promovemos el contenido digital para aumentar la visibilidad y posicionamiento en las páginas de resultados del motor de búsqueda. El posicionamiento en motores de búsqueda (SEO), móviles.",
+    alt:"des5"
+},
+{
+    id:"fondo5",
+    class:"carousel-item",
+    nombre:"SMM",
+    descripcion:"Social Media Marqueting (SMM) mercadotecnia viral para crear una idea, posicionar una marca, incrementar la visibilidad e incluso aumentar las ventas de productos.",
     alt:"des5"
 },
 {
