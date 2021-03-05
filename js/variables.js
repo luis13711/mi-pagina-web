@@ -388,14 +388,22 @@ var experiencia_luisjs = [
 ];
 
 var serviciosjs = [
-{
-    id:"fondo1",
-    class:"carousel-item active",
-    data_bs_interval:"2000",
-    nombre:"Diseño y Desarrollo web",
-    descripcion:"Diseño, desarrollo y creación de aplicaciones web.",
-    alt:"des1"
-},
+    {
+        nombre:"Asesoria para avanzar y crecer en las redes sociales",
+        descripcion:"Tips y estrategias para crecer y monetizar en las redes sociales."
+    },
+    {
+        nombre:"Instalación y configuración de servidores",
+        descripcion:"Configuración de DNS, Directorio Activo, Impresión, Web, FTP."
+    },
+    {
+        id:"fondo1",
+        class:"carousel-item active",
+        data_bs_interval:"2000",
+        nombre:"Diseño y Desarrollo web",
+        descripcion:"Diseño, desarrollo y creación de aplicaciones web.",
+        alt:"des1"
+    },
 {
     id:"fondo2",
     class:"carousel-item",

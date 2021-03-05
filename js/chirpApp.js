@@ -2,9 +2,28 @@
 
 
 var app = angular.module('chirpApp', ['ngRoute', 'ngResource']).run(function($rootScope) {
-        $rootScope.contactos = contactosjs;
-        $rootScope.proyectos_realizados_luis = proyectos_realizados_luis;
-        $rootScope.cursos = cursosjs;
+        $rootScope.inicializarJSON = function(){
+                //console.log('inicializarJSON')
+                fetch('js/proyectos_realizados_luis.json')
+                .then(response => response.json())
+                .then(data =>{
+                        //console.log(data)
+                        $rootScope.proyectos_realizados_luis =  data;
+                });
+                fetch('js/contactos.json')
+                .then(response => response.json())
+                .then(data =>{
+                        //console.log(data)
+                        $rootScope.contactos =  data;
+                });
+                fetch('js/cursos.json')
+                .then(response => response.json())
+                .then(data =>{
+                        //console.log(data)
+                        $rootScope.cursos =  data;
+                });
+                
+        };
 });
 
 app.controller('myCtrl', function(postService, $scope, $rootScope){
@@ -79,6 +98,62 @@ app.config(function($routeProvider){
 app.factory('postService', function($resource){
 	return $resource('/api/posts/:id');
 });
+
+app.controller('contactoLuisController', function(postService, $scope, $rootScope){
+	$scope.sesion = sesionjs;
+        $scope.menu = menujs;
+        $scope.contactos = contactosjs;
+        $scope.tecnologia = []
+        $scope.proyectos = servicio_comunitario_luis;
+        //$scope.proyectos_realizados_luis = proyectos_realizados_luis;
+        $scope.trabajo_grado_luis = trabajo_grado_luis;
+        $scope.experiencia_luis = experiencia_luisjs;
+
+        $scope.inicializarJSON = function(){
+                //console.log('inicializarJSON')
+                fetch('js/proyectos_realizados_luis.json')
+                .then(response => response.json())
+                .then(data =>{
+                        //console.log(data)
+                        $scope.proyectos_realizados_luis =  data;
+                });
+        }
+
+        $scope.obtenerDetalleExperiencia = function(id){
+                //console.log('obtenerDetalleTrabajoGrado')
+                var proyecto = {};
+                for(let proyecto2 of $scope.experiencia_luis){
+                        if(proyecto2.id == id){
+                                proyecto = proyecto2;
+                        }
+                }
+                $scope.tecnologia = proyecto.tecnologia
+                
+        };
+        $scope.obtenerDetalleTrabajoGrado = function(id){
+                //console.log('obtenerDetalleTrabajoGrado')
+                var proyecto = {};
+                for(let proyecto2 of $scope.trabajo_grado_luis){
+                        if(proyecto2.id == id){
+                                proyecto = proyecto2;
+                        }
+                }
+                $scope.tecnologia = proyecto.tecnologia
+                
+        };
+        $scope.obtenerDetalle = function(id){
+                //console.log('obtenerDetalle')
+                var proyecto = {};
+                for(let proyecto2 of $scope.proyectos_realizados_luis){
+                        if(proyecto2.id == id){
+                                proyecto = proyecto2;
+                        }
+                }
+                $scope.tecnologia = proyecto.tecnologia
+                
+        };
+});
+
 
 app.controller('contactoAnaController', function(postService, $scope, $rootScope){
 	$scope.sesion = sesionjs;
@@ -333,49 +408,6 @@ app.controller('mainController', function(postService, $scope, $rootScope){
         $scope.proyectos_realizados_luis = proyectos_realizados_luis;
 });
 
-app.controller('contactoLuisController', function(postService, $scope, $rootScope){
-	$scope.sesion = sesionjs;
-        $scope.menu = menujs;
-        $scope.contactos = contactosjs;
-        $scope.tecnologia = []
-        $scope.proyectos = servicio_comunitario_luis;
-        $scope.proyectos_realizados_luis = proyectos_realizados_luis;
-        $scope.trabajo_grado_luis = trabajo_grado_luis;
-        $scope.experiencia_luis = experiencia_luisjs;
-        $scope.obtenerDetalleExperiencia = function(id){
-                //console.log('obtenerDetalleTrabajoGrado')
-                var proyecto = {};
-                for(let proyecto2 of $scope.experiencia_luis){
-                        if(proyecto2.id == id){
-                                proyecto = proyecto2;
-                        }
-                }
-                $scope.tecnologia = proyecto.tecnologia
-                
-        };
-        $scope.obtenerDetalleTrabajoGrado = function(id){
-                //console.log('obtenerDetalleTrabajoGrado')
-                var proyecto = {};
-                for(let proyecto2 of $scope.trabajo_grado_luis){
-                        if(proyecto2.id == id){
-                                proyecto = proyecto2;
-                        }
-                }
-                $scope.tecnologia = proyecto.tecnologia
-                
-        };
-        $scope.obtenerDetalle = function(id){
-                //console.log('obtenerDetalle')
-                var proyecto = {};
-                for(let proyecto2 of $scope.proyectos_realizados_luis){
-                        if(proyecto2.id == id){
-                                proyecto = proyecto2;
-                        }
-                }
-                $scope.tecnologia = proyecto.tecnologia
-                
-        };
-});
 
 app.controller('contactoPercyController', function(postService, $scope, $rootScope){
 	$scope.sesion = sesionjs;
